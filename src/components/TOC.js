@@ -29,6 +29,15 @@ class TOC extends Component {
         </nav>
         );
     }
+
+    return (
+      <nav>
+        <ul>
+          {lists}
+        </ul>
+      </nav>
+    );
+  }
 }
 
 export default TOC;
