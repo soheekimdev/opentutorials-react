@@ -53,6 +53,12 @@ class App extends Component {
             });
           }.bind(this)}
           data={this.state.contents}
+          onChangePage={function(id){
+            this.setState({
+              mode:'read',
+              selected_content_id:Number(id)
+            });
+          }.bind(this)}
         ></TOC>
         <Content title={_title} desc={_desc}></Content>
       </div>
